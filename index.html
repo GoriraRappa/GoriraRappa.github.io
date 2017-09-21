@@ -21,11 +21,11 @@
         <audio id="click-sound" crossorigin="anonymous" src="https://cdn.aframe.io/360-image-gallery-boilerplate/audio/click.ogg"></audio>
         <img id="hawaii" crossorigin="anonymous" src="src/Hawaii_Farm.JPG">
         <img id="vietnam" crossorigin="anonymous" src="src/Vietnam_Robusta.JPG">
-          <img id="vietnam" crossorigin="anonymous" src="src/worldmap.png">
+          <img id="world" crossorigin="anonymous" src="src/worldmap.png">
         <!-- Image link template to be reused. -->
         <script id="link" type="text/html">
-          <a-entity class="link"
-            geometry="primitive: plane; height: 1; width: 1"
+          <a-entity class="link">
+            <!-- geometry="primitive: plane; height: 1; width: 1" -->
             material="shader: flat; src: ${thumb}"
             event-set__1="_event: mousedown; scale: 1 1 1"
             event-set__2="_event: mouseup; scale: 1.2 1.2 1"
@@ -37,7 +37,7 @@
       </a-assets>
 
       <!-- 360-degree image. -->
-      <a-sky id="image-360" radius="10" src="#brazil"></a-sky>
+      <a-sky id="image-360" radius="10" src="#world"></a-sky>
 
       <!-- Image links. -->
       <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
