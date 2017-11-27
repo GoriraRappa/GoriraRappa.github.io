@@ -7,9 +7,14 @@
   </head>
 
     <body> 
-　　　　　　　   <a-scene> 
-　　　　　　　　　　　   <a-sky src="src/Brazil_Laurina_Farm.JPG" rotation="0 170 0"></a-sky> 
-　　　　　　　   </a-scene>
-　　　  </body> 
-
+        <a-assets>
+            <img id="map" src="src/worldmap.png">
+        </a-assets>
+        
+        <a-scene>
+            <a-image id="piyo" src="#piyo" scale="3 3 3" position="0 0 0"></a-image>
+            <a-sky src="src/Brazil_Laurina_Farm.JPG" rotation="0 170 0"></a-sky> 
+        </a-scene>
+    </body> 
+    
 </html>
