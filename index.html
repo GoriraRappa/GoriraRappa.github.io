@@ -13,8 +13,8 @@
         <a-assets>
             <!-- omni image -->
             <img id="map" src="src/worldmap.png">
-            <img id="a" crossorigin="anonymous" src="src/Brazil_Laurina_Farm.JPG">
-            <img id="b" crossorigin="anonymous" src="src/Hawaii_Farm.JPG">
+            <img id="a" src="src/Brazil.jpg">
+            <img id="b" src="src/Hawaii.jpg">
             <img id="thumb" crossorigin="anonymous" src="src/mame.png">
             
             <!-- link template -->
@@ -39,7 +39,7 @@
             <a-sky id="image-360" rotation="0 170 0" src="#a"></a-sky>
             
             <!-- link -->
-            <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
+            <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4" material="opacity: 0.0; transparent: true">
                 <a-entity template="src: #link" data-src="#a" data-thumb="#thumb"></a-entity>
                 <a-entity template="src: #link" data-src="#b" data-thumb="#thumb"></a-entity>
             </a-entity>
