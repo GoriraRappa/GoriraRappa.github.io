@@ -7,7 +7,7 @@
     <script src="https://unpkg.com/aframe-template-component@3.x.x/dist/aframe-template-component.min.js"></script>
     <script src="https://unpkg.com/aframe-layout-component@3.x.x/dist/aframe-layout-component.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@3.x.x/dist/aframe-event-set-component.min.js"></script>
-      <script src="components/set-image.js"></script>
+      <!-- <script src="components/set-image.js"></script> -->
   </head>
 
     <body> 
@@ -42,8 +42,8 @@
             
             <!-- link -->
             <a-entity id="links" layout="type: line; margin: 1.5" position="0 -1 -4">
-                <a-entity template="src: #link" data-src="#a" data-thumb="#thumb"></a-entity>
-                <a-entity template="src: #link" data-src="#b" data-thumb="#thumb"></a-entity>
+                <a-entity template="src: #link" src="#a" data-thumb="#thumb"></a-entity>
+                <a-entity template="src: #link" src="#b" data-thumb="#thumb"></a-entity>
             </a-entity>
             
             
