@@ -9,7 +9,14 @@
     <script src="https://unpkg.com/aframe-event-set-component@3.x.x/dist/aframe-event-set-component.min.js"></script>
     <!-- <script src="components/set-image.js"></script>-->
   </head>
-
+<script>
+  AFRAME.registerComponent('alpha-test', {
+    dependencies: ['material'],
+    init: function () {
+      this.el.getObject3D('mesh').material.alphaTest = 0.5;
+    }
+  });
+</script>
     <body> 
         <a-assets>
             <!-- omni image -->
